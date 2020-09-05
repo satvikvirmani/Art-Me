@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	Title
+	</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+	<div class="w3-sidebar w3-bar-block w3-white w3-animate-right" style="width:200px;right:0;display:none;z-index: 4;" id="mySidebar">
+		<button class="w3-bar-item w3-button" onclick="w3_close()">Close</button>
+		<a href="#home" class="w3-bar-item w3-button" onclick="w3_close()">Home</a>
+		<a href="#images" class="w3-bar-item w3-button" onclick="myAccFunc()">Images</a>
+		<div id="demoAcc" class="w3-bar-block w3-hide w3-white w3-card-4">
+			<a href="#images" class="w3-bar-item w3-button" onclick="filterSelection('Category_1'),w3_close()">Category_1</a>
+			<a href="#images" class="w3-bar-item w3-button" onclick="filterSelection('Category_2'),w3_close()">Category_2</a>
+		</div>
+		<a href="#contact" class="w3-bar-item w3-button" onclick="w3_close()">Contact</a>
+	</div>
+	  
+	  <!-- Overlay -->
+	
+	<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn" onclick="w3_open()">
+			<i class="fa fa-bars" onclick="w3_close()"></i>
+		</label>
+		<img class="logo-image" src="logo.jpg" alt="Logo" width="75px" height="75px">
+		<label class="logo-text">
+			Art_Me
+		</label>
+		<ul class="nav">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#images">Images</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+
+	<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+	<div class="home" id="home">
+
+		<div class="intro">
+			“You don't take a photograph, you make it” <br> By Ansel Adams
+		</div>
+
+	</div>
+
+	<div id="images">
+		<h1 class="images_head">Here are some my Works</h1>
+		<div id="myBtnContainer">
+			<button class="btn active btn btn-outline-success" onclick="filterSelection('all')">All</button>
+			<button class="btn btn-outline-primary" onclick="filterSelection('Category_1')">Category_1</button>
+			<button class="btn btn-outline-success" onclick="filterSelection('Category_2')">Category_2</button>
+	</div>
+			<div class="grid" id="toggle_1">
+				<div class="column Category_2"><img src="https://picsum.photos/id/1/300/300" onclick="onClick(this)"> 	
+					</div>
+					<div class="column Category_2"><img src="https://picsum.photos/id/10/300/300" onclick="onClick(this)"> 	
+					</div>
+					<div class="column Category_2"><img src="https://picsum.photos/id/100/300/300" onclick="onClick(this)"> 	
+					</div>
+					<div class="column Category_1"><img src="https://picsum.photos/id/1000/300/300" onclick="onClick(this)"> 	
+					</div>
+					<div class="column Category_2"><img src="https://picsum.photos/id/1001/300/300" onclick="onClick(this)"> 	
+					</div>
+					<div class="column Category_2"><img src="https://picsum.photos/id/1002/300/300" onclick="onClick(this)"> 	
+					</div>
+					<div class="column Category_2"><img src="https://picsum.photos/id/1020/300/300" onclick="onClick(this)"> 	
+					</div>
+					<div class="column Category_2"><img src="https://picsum.photos/id/1003/300/300" onclick="onClick(this)"> 	
+					</div>
+					<div class="column Category_1"><img src="https://picsum.photos/id/1004/300/300" onclick="onClick(this)"> 	
+					</div>
+					<div class="column Category_2"><img src="https://picsum.photos/id/1005/300/300" onclick="onClick(this)"> 	
+					</div>
+					<div class="column Category_2"><img src="https://picsum.photos/id/1006/300/300" onclick="onClick(this)"> 	
+					</div>
+					<div class="column Category_2"><img src="https://picsum.photos/id/1015/300/300" onclick="onClick(this)"> 	
+					</div>
+				</div>
+			<div class="grid" id="toggle_2">
+				<div class="column Category_2"><img src="https://picsum.photos/id/1008/300/300" onclick="onClick(this)"> 	
+					</div>
+					<div class="column Category_1"><img src="https://picsum.photos/id/1009/300/300" onclick="onClick(this)"> 	
+					</div>
+					<div class="column Category_2"><img src="https://picsum.photos/id/1010/300/300" onclick="onClick(this)"> 	
+					</div>
+					<div class="column Category_2"><img src="https://picsum.photos/id/1011/300/300" onclick="onClick(this)"> 	
+					</div>
+				</div>
+				<button type="button" class="btn toggle-btn btn-outline-dark" id="more_btn" onclick="show_more()">Show More</button>
+				<button type="button" class="btn toggle-btn btn-outline-dark" id="less_btn" onclick="show_less()">Show Less</button>
+				<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+					<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+					<div class="w3-modal-content w3-animate-zoom">
+					  <img id="img01" style="width:100%">
+					</div>
+					<button class="w3-display-bottommiddle w3-button .w3-hover-cyan" style="background-color: #4caf50;"><a href="#" style="text-decoration: none;color: #000;">Download Full Resolution Image</a></button>
+				</div>
+			</div>
+	<div id="ask">
+		<h3>Hey there, Ask for your Custom Project, Now</h3>
+		<div class="contain1">
+			<div class="left_panel">
+				Get your custom made <span style="font-style: italic;">Portrait, family photo, explosion boxes, scrap files</span> and many more.
+				<h6>Store your moments for your future</h6>
+				<br>
+				Ask for your custom project now @ 
+				<!--ADD your email address in place of '#'-->
+				<br><a href = "mailto:#?subject = Subject&body = BODY">youremail@example.com</a>
+			</div>
+			<img src="https://picsum.photos/id/1012/300/300" height="300px" width="300px">
+		</div>
+	</div>
+			<!--Contact Section-->
+
+<div class="contact" id="contact">
+	<h3 class="contact_head">Contact Me Now</h3>
+	<div class="contain2">
+		<div class="left">
+			<!--ADD your email address in place of '#'-->
+			<a href = "mailto:#?subject = Subject&body = BODY" style="font-size: 24px;">Order Now</a>
+			<div class="disclaimer">
+				All the products are handmade and are subject to postal risk. <br>
+				Images depicted may slightly vary to due advanced photo effects. <br>
+				Shipping cost extra*
+			</div>
+		</div>
+		<div class="right">
+		<div class="svg-left">
+			Order On
+			<ul>
+				<li><!-- Add Your Instagram Link in palce of '#'--><a href="#" style="text-decoration: none;"> <span style="color:  #4267B2;"><i class="fa fa-instagram"></i></span> Instagram</a></li>
+				<li><!-- Add Your Facebook Link in palce of '#'--><a href="#" style="text-decoration: none;"> <span style="color:  #4267B2;"><i class="fa fa-facebook"></i></span> Facebook</a></li>
+				<li><!-- Add Your Linkedin Link in palce of '#'--><a href="#" style="text-decoration: none;"> <span style="color:  #4267B2;"><i class="fa fa-linkedin"></i></span> Linkedin</a></li>
+				<li><!-- Add Your Youtube Link in palce of '#'--><a href="#" style="text-decoration: none;"> <span style="color:  #4267B2;"><i class="fa fa-youtube"></i></span> Youtube</a></li>
+			</ul>
+		</div>
+		<div class="svg-right">
+			<img src="order.svg" width="150px;" class="svg">
+		</div>
+		</div>
+	</div>
+</div>
+	<script src="scripts/scripts.js"></script>
+</body>
+</html>
