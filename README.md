@@ -31,3 +31,4 @@ For other:
 [Facebook](https://www.facebook.com/satvik.virmani.9)
 [Instagram](https://www.instagram.com/satvik_virmani/)
 [Twitter](https://twitter.com/SatvikVirmani?fbclid=IwAR3i2uPR8rlZVjX1UHU9I_33SY2xgmbcJYebk16EKj58GQwjYzc_Nhe9fAc)
+[Medium](https://medium.com/@satvikvirmani)
