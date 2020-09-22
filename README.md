@@ -1,21 +1,10 @@
 # Art_Me
 A website for artists and painting enthusiasts.
 
-![Screenshot 1](https://ik.imagekit.io/garimaworks999/Github/Art_Me/Screenshot01_IYuidBMyb.png)
+![Screenshot 1](https://ik.imagekit.io/garimaworks999/Github/Art-Me/Light_Theme__3__eeXkeWpNX.png)
+![Screenshot 2](https://ik.imagekit.io/garimaworks999/Github/Art-Me/Light_Theme__4__Io2iP_jy05jB.png)
+![Screenshot 3](https://ik.imagekit.io/garimaworks999/Github/Art-Me/Light_Theme__5__6BbOVq_eyx.png)
 
-**Home Page**
-
-![Screenshot 2](https://ik.imagekit.io/garimaworks999/Github/Art_Me/Screenshot02_J8CXGWL86.png)
-
-**Projects Section**
-
-![Screenshot 3](https://ik.imagekit.io/garimaworks999/Github/Art_Me/Screenshot03_cAV3xaQ10.png)
-
-**Order Section**
-
-![Screenshot 4](https://ik.imagekit.io/garimaworks999/Github/Art_Me/Screenshot04_nqCaiGD_T.png)
-
-**Contact Section**
 
 ***Feel free to Show and Share the code
 But don't forget to attribute***
