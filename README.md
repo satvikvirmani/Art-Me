@@ -1,4 +1,4 @@
-# Art_Me
+# Art-Me
 A website for artists and painting enthusiasts.
 
 ![Screenshot-1](https://ik.imagekit.io/garimaworks999/Github/Art-Me/Light_Theme__8__HZvn9c2QA.png)
